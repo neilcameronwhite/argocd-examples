@@ -9,7 +9,7 @@ metadata:
 spec:
   host: frontend.paasdc.tz.bayportfinance.com
   port:
-    targetPort: 80-80
+    targetPort: 80
   to:
     kind: Service
     name: frontend
@@ -22,3 +22,4 @@ status:
           type: Admitted
       host: frontend.paasdc.tz.bayportfinance.com
       routerName: router
+    wildcardPolicy: None
