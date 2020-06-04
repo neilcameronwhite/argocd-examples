@@ -22,4 +22,3 @@ status:
           type: Admitted
       host: frontend.paasdc.tz.bayportfinance.com
       routerName: router
-      wildcardPolicy: None
