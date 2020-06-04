@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: hello-kubernetes
+  name: hello-kubernetes
+  namespace: hello-argocd  
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: hello-kubernetes
+  sessionAffinity: None
+  type: ClusterIP
