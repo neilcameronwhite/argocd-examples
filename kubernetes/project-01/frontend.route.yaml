@@ -7,7 +7,7 @@ metadata:
   name: frontend
   namespace: project-01
 spec:
-  host: frontene.paasdc.tz.bayportfinance.com
+  host: frontend.paasdc.tz.bayportfinance.com
   port:
     targetPort: 80-80
   to:
