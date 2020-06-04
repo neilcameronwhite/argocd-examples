@@ -7,12 +7,12 @@ metadata:
   name: frontend
   namespace: project-01
 spec:
-  host: grafana.paasdc.tz.bayportfinance.com
+  host: frontene.paasdc.tz.bayportfinance.com
   port:
     targetPort: 80-80
   to:
     kind: Service
-    name: grafana.paasdc.tz.bayportfinance.com
+    name: frontend.paasdc.tz.bayportfinance.com
     weight: 100
   wildcardPolicy: None
 status:
@@ -20,5 +20,5 @@ status:
     - conditions:
         - status: 'True'
           type: Admitted
-      host: grafana.paasdc.tz.bayportfinance.com
+      host: frontend.paasdc.tz.bayportfinance.com
       routerName: router
