@@ -1,0 +1,24 @@
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: grafan-demo
+  name: grafan-demo
+  namespace: project-02
+spec:
+  host: grafan-demo.paasdc.tz.bayportfinance.com
+  port:
+    targetPort: 3000
+  to:
+    kind: Service
+    name: grafan-demo
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress:
+    - conditions:
+        - status: 'True'
+          type: Admitted
+      host: grafan-demo.paasdc.tz.bayportfinance.com
+      routerName: router
