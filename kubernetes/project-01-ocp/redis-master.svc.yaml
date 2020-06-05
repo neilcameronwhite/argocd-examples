@@ -7,7 +7,7 @@ metadata:
     app: redis
     role: master
     tier: backend
-  namespace: project-01
+  namespace: project-01-opc
 spec:
   ports:
   - port: 6379

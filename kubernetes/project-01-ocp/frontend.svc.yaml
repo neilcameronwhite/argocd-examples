@@ -6,7 +6,7 @@ metadata:
   labels:
     app: guestbook
     tier: frontend
-  namespace: project-01
+  namespace: project-01-opc
 spec:
   type: ClusterIP
   ports:

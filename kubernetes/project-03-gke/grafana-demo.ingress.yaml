@@ -1,0 +1,15 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: grafana-demo
+  namespace: project-03-k8s
+spec:
+  rules:
+  - host: grafana-demo.apps.cluster-01.gke.lsd.co.za
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: grafana-demo
+          servicePort: 3000

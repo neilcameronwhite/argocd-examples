@@ -5,7 +5,7 @@ metadata:
   name: frontend
   labels:
     app: guestbook
-  namespace: project-01
+  namespace: project-01-opc
 spec:
   selector:
     matchLabels:
