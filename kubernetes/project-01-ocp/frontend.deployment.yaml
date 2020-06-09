@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: Deploymentasdf
+kind: Deployment
 metadata:
   name: frontend
   labels:
